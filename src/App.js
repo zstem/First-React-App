@@ -1,23 +1,32 @@
 import logo from './zs.jpg';
 import './App.css';
+import React from 'react';
+import { Component } from 'react';
+import ReactDOM from 'react-dom';
+import Counter from './Counter.jsx';
+import Welcome from './Welcome.jsx';
+//let value = document.getElementById("fname").value;
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
+        <Welcome/>
+        <Counter/>
         <a
           className="App-link"
           href="https://github.com/zstem"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Zack
+          {"GitHub"}
         </a>
       </header>
     </div>
   );
 }
+
 
 export default App;
